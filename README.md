@@ -1,2 +1,2 @@
-# JavaScript_first-
-this is my repository for learning GitHub and Also learning JavaScript on the way 
+This is my learning from diffrent sources like youtube and google i make this repo for quick revision of main content of language 
+
