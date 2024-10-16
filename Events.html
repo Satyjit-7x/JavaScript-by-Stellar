@@ -1,0 +1,44 @@
+
+<!-- 
+/*Events in javascript are actions that happens in the browser that browser can respond to.
+ SIMPLE: events are like announcement
+ Famous Example : in double click like the pic , scroll to change page
+
+Events can be user interactions, like clicking a button or typing in a field, or browser-related, like loading a webpage or resizing a window.
+*/
+/*           Some Popular events are mouse,keyboard,form,window,touch(for smartphones)   
+  Event Handle i)Event Bubbling(through DOM) , Event Capturing(through  outermost element down to the target element)                             */
+
+/*
+   SUBSCRIBE BTN (event target)-> (when we click it) -> event happen (CLICK) -> action(event listner) addEventListner(<event_type>,<function>) 
+   we can remove using removeEventListner()
+  
+   addEventListner()-> by default applied in bubbling phase
+
+   https://www.codehelp.in/tutorial/javascript/importance-of-javascript-events
+   
+*/
+-->
+
+<!doctype html>
+<html>
+  <head>
+    <title> Event Listner</title>
+  </head>
+
+  <body>
+    <p id="pg">Hello Satyjit </p>
+  
+  <script>
+       function changeText(){
+        let para = getElementById('pg');
+        para.textContent = "Hello Stellar"; 
+       }
+
+       let para = getElementById('pg');
+       para.addEventListner('click',changeText());
+       //para.removeEventListner('click',changeText());
+  </script>
+
+  </body>
+</html>

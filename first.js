@@ -1,0 +1,1 @@
+console.log("first my") // no semicolon required 
