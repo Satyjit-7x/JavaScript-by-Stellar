@@ -11,7 +11,7 @@ let bag = {
   [fruit]: 5, // the name of the property is taken from the variable fruit
 };
 
-alert( bag.apple ); // 5 if fruit="apple"
+console.log( bag.apple ); // 5 if fruit="apple"
 
 let fruit = 'apple';
 let bag = {
@@ -59,9 +59,9 @@ let userr = {
 
 for (let key in userr) { // we can give any name to variable key,property its programmers choice
   // keys
-  alert( key );  // name, age, isAdmin
+  console.log( key );  // name, age, isAdmin
   // values for the keys
-  alert( userr[key] ); // John, 30, true
+  console.log( userr[key] ); // John, 30, true
 }
 
 let codes = {
@@ -73,8 +73,13 @@ let codes = {
 };
 
 for (let code in codes) {
-  alert( +code ); // 49, 41, 44, 1 //here + is implicitey type case string into integer
+ console.log( +code ); // 49, 41, 44, 1 //here + is implicitey type case string into integer
 }
 
+//isEmpty property for object
+let schedule = {};
+console.log( isEmpty(schedule) ); // true
+schedule["8:30"] = "get up";
+console.log( isEmpty(schedule) ); // false
 
 
